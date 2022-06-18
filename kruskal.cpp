@@ -23,6 +23,6 @@ int main()//Main Function
 			parent[b]=a;
 		}
 		cost[a][b]=cost[b][a]=999;//Disconnecting the edge
-	}											//to avoid re-calculation
+	}								//to avoid re-calculation
 	printf("\nMinimum cost %d \n",min_cost);//Printing the minimum cost
 }
