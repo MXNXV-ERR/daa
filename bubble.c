@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
-
 int main()
 {
 	clock_t s,e;double ttt;int n;
