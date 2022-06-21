@@ -1,7 +1,7 @@
 #include<stdio.h>//Standard input output
 int main()//Main Function
 {
-	int i,j,n,ne,min_cost=0,min=999,source,a,b,u,v;
+	int i,j,n,ne,min_cost=0,min=999,source,a,b;
 	printf("Enter the number of nodes");
 	scanf("%d",&n);//Input number of nodes
 	printf("Enter cost matrix\n");
