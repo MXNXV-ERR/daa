@@ -1,11 +1,11 @@
 #include<stdio.h>//Standard input output
 int main()//Main Function
 {
-	int i,j,n,ne,min_cost=0,min,source,a,b;
+	int i,j,n,ne,min_cost=0,min=999,source,a,b,u,v;
 	printf("Enter the number of nodes");
 	scanf("%d",&n);//Input number of nodes
 	printf("Enter cost matrix\n");
-	int cost[n][n],visited[n];
+	int cost[n+1][n+1],visited[n+1];
 	for(i=1;i<=n;i++,visited[i]=0)
 		for(j=1;j<=n;j++)
 			scanf("%d",&cost[i][j]);//Input cost matrix
@@ -16,7 +16,7 @@ int main()//Main Function
  	for(ne=1;ne<n;min=999)
 	{	for(i=1;i<=n;i++)
 			for(j=1;j<=n;j++)
-				if(cost[i][j]<min)//Checking if it is the minimum edge
+				if(cost[i][j]<min&&i!=j)//Checking if it is the minimum edge
 					if(visited[i]==1)//Checking if node already visited
 						min=cost[a=i][b=j];//Finding the minimum edge
 											//to avoid re-calculation
