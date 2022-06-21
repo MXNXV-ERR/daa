@@ -5,7 +5,7 @@ int main()//Main Function
 	printf("Enter the number of nodes");
 	scanf("%d",&n);//Input number of nodes
 	printf("Enter cost matrix\n");
-	int cost[n+1][n+1],visited[n+1];
+	int cost[n][n],visited[n];
 	for(i=1;i<=n;i++,visited[i]=0)
 		for(j=1;j<=n;j++)
 			scanf("%d",&cost[i][j]);//Input cost matrix
