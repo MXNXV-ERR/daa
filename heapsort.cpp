@@ -30,11 +30,7 @@ void heapSort(int a[], int n)
         heapify(a, i, 0);  
     }  
 }  
-void printArr(int arr[], int n)  
-{  
-    for (int i = 0; i < n; i++)    
-        printf("%d\t", arr[i]);            
-}  
+
 int main()
 {
 	clock_t s,e;
