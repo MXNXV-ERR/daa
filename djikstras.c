@@ -18,7 +18,7 @@ int main()//Main function
 	visited[source]=1;//Making source node as visited
 	d[source]=0;//Distance source node is 0
 	for(j=2;j<=n;j++,min=999)
-		for(i=1;i<=n;i++)
+	{	for(i=1;i<=n;i++)
 			if(!visited[i]&&d[i]<min)
 					min=d[u=i];//Find minimum index and cost
 								//from current node
@@ -28,7 +28,7 @@ int main()//Main function
 		if(!visited[w])//Check if not visited
 			if(d[w]>cost[u][w]+d[u])//Find if there is a path with lower cost
 				d[w]=cost[u][w]+d[u];//If yes,make that as minimum distance
-				
+	}
 	for(i=1;i<=n;i++)
  		if(i!=source)
   			printf("\nShortest path from %d to %d is %d",source,i,d[i]);
